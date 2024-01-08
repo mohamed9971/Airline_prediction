@@ -2,10 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import sklearn
-import os
-import xgboost
-import sklearn
+
 
 os.chdir('/Users/mohamedatef/Downloads')
 

@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 
-os.chdir('/Users/mohamedatef/Downloads')
+
 
 Model = joblib.load('Airline_model.h5')
 columns = joblib.load('Airline_model_columns.h5')

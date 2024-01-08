@@ -14,8 +14,7 @@ def main() :
     
     st.write("Airline Fare Prediction")
     
-    airline = st.checkbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet',
-       'Multiple carriers', 'GoAir', 'Vistara', 'Air Asia'))
+    airline = st.checkbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet','Multiple carriers', 'GoAir', 'Vistara', 'Air Asia'))
     
     source = st.checkbox('Please Select Source' , ('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
     

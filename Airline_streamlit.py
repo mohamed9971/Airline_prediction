@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import xgboost
+from xgboost import XGBRegressor
 
 
 

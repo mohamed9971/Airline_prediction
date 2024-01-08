@@ -14,12 +14,12 @@ def main() :
     
     st.write("Airline Fare Prediction")
     
-    Airline = st.checkbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet',
+    airline = st.checkbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet',
        'Multiple carriers', 'GoAir', 'Vistara', 'Air Asia'))
     
-    Source = st.checkbox('Please Select Source' , ('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
+    source = st.checkbox('Please Select Source' , ('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
     
-    Destination = st.checkbox('Please Select Destination' , ('New Delhi', 'Banglore', 'Cochin', 'Kolkata', 'Delhi', 'Hyderabad'))
+    destination = st.checkbox('Please Select Destination' , ('New Delhi', 'Banglore', 'Cochin', 'Kolkata', 'Delhi', 'Hyderabad'))
     
     stops = st.checkbox("Please Select Total Stops" , (0,1,2,3,4))
     
@@ -40,7 +40,7 @@ def main() :
     
     prediction = 'Prediction is not made yet, Click Predict make prediction.'
     
-    input_data = [Airline,Source,Destination,stops,month,day,dep_hour,dep_min,arrival_hour,arrival_min,duration]
+    input_data = [airline,source,destination,stops,month,day,dep_hour,dep_min,arrival_hour,arrival_min,duration]
     
     input_df = pd.DataFrame(input_data , columns=columns)
     

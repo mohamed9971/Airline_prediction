@@ -14,13 +14,13 @@ def main() :
     
     st.write("Airline Fare Prediction")
     
-    airline = st.checkbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet','Multiple carriers', 'GoAir', 'Vistara', 'Air Asia'))
+    airline = st.selectbox('Please Select Airline' , ('IndiGo', 'Air India', 'Jet Airways', 'SpiceJet','Multiple carriers', 'GoAir', 'Vistara', 'Air Asia'))
     
-    source = st.checkbox('Please Select Source' , ('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
+    source = st.selectbox('Please Select Source' , ('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
     
-    destination = st.checkbox('Please Select Destination' , ('New Delhi', 'Banglore', 'Cochin', 'Kolkata', 'Delhi', 'Hyderabad'))
+    destination = st.selectbox('Please Select Destination' , ('New Delhi', 'Banglore', 'Cochin', 'Kolkata', 'Delhi', 'Hyderabad'))
     
-    stops = st.checkbox("Please Select Total Stops" , (0,1,2,3,4))
+    stops = st.selectbox("Please Select Total Stops" , (0,1,2,3,4))
     
     month = st.selectbox('Select Flight Month' , (1,2,3,4,5,6,7,8,9,10,11,12))
     

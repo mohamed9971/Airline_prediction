@@ -42,7 +42,7 @@ def main() :
     
     input_data = [airline,source,destination,stops,month,day,dep_hour,dep_min,arrival_hour,arrival_min,duration]
     
-    input_df = pd.DataFrame(input_data , columns=columns)
+    input_df = pd.DataFrame([input_data] , columns=columns)
     
     if st.button('Predict Flight Price.'):
         prediction = f'Flight Price is {"{}".format(Model.predict(input_df)[0])}'

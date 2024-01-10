@@ -7,7 +7,7 @@ from xgboost import XGBRegressor
 
 
 
-Model = joblib.load('Airline_model.h5')
+Model = joblib.load('Airline_XGB.h5')
 columns = joblib.load('Airline_model_columns.h5')
 
 def main() :
